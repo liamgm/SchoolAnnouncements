@@ -1,4 +1,8 @@
 @echo off
+:: Fix a problem I had with getting a large file into the repository
+If Not Exist ".\OBS\obs-plugins\64bit\libcef.dll" copy /B ".\OBS\obs-plugins\64bit\libcef1.dll+.\OBS\obs-plugins\64bit\libcef2.dll" ".\OBS\obs-plugins\64bit\libcef.dll"
+:: groan.
+
 :: Copy profiles to user directory
 If Not Exist "%APPDATA%\obs-studio\basic\profiles\MPEG2TS\basic.ini" robocopy ".\OBS_Profiles\MPEG2TS" "%APPDATA%\obs-studio\basic\profiles\MPEG2TS" basic.ini
 If Not Exist "%APPDATA%\obs-studio\basic\profiles\WEBM\basic.ini" robocopy ".\OBS_Profiles\WEBM" "%APPDATA%\obs-studio\basic\profiles\WEBM" basic.ini
