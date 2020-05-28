@@ -20,7 +20,7 @@ The modifications to OBS are more substantial. There are problems with the FFMpe
 
 This distribution of OBS is based on the 25.0.8 release, but uses the [4.1.4 shared build of FFMPeg](https://ffmpeg.zeranoe.com/builds/win64/shared/ffmpeg-4.1.4-win64-shared.zip).
 
-That problem will not occur on an operating system other than Windows, where OBS can record WebM using FFMpeg just fine out of the box in my testing. If you don't want to use WebM/Firefox, you don't need this customization and can use your existing OBS installation to stream h.264/aac.
+That problem will not occur on an operating system other than Windows, where OBS can record WebM using FFMpeg just fine out of the box in my testing. If you don't want to use WebM/Firefox, you don't need this customization and can use your existing OBS installation to stream h.264/aac. In that case, you'll just need IceCast and [the MPEG2TS profile that you can download and import on its own.](https://github.com/liamgm/SchoolAnnouncements/raw/master/OBS_Profiles/MPEG2TS/basic.ini)
 
 This version of OBS also has the [Virtual Camera plugin](https://obsproject.com/forum/resources/obs-virtualcam.949/) pre-installed so that you can use the output of OBS to send to remote reporters via WebRTC, over <https://talky.io>, for example, and capture the video coming back for use in the broadcast.
 
